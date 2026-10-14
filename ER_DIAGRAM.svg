@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980" role="img" aria-labelledby="title desc">
+  <title id="title">GearDesk vehicle service system entity relationship diagram</title>
+  <desc id="desc">Relational database entities and foreign-key relationships for a vehicle service management system.</desc>
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#16324f" flood-opacity="0.10"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6b7f99"/></marker>
+    <style>
+      .title{font:700 27px Arial,sans-serif;fill:#172b4d}.subtitle{font:14px Arial,sans-serif;fill:#667085}
+      .entity{fill:#fff;stroke:#d9e2ee;stroke-width:1.5;filter:url(#shadow)}
+      .head{fill:#14243a}.headAccent{fill:#246bfd}
+      .headText{font:700 16px Arial,sans-serif;fill:#fff;letter-spacing:.4px}
+      .row{font:13px Arial,sans-serif;fill:#344054}.key{font:700 12px Arial,sans-serif;fill:#246bfd}
+      .line{fill:none;stroke:#6b7f99;stroke-width:2;marker-end:url(#arrow)}
+      .rel{font:700 12px Arial,sans-serif;fill:#475467}.badge{fill:#eef4ff;stroke:#d6e4ff}
+      .badgeText{font:700 11px Arial,sans-serif;fill:#245bb7}.legend{font:12px Arial,sans-serif;fill:#667085}
+    </style>
+  </defs>
+  <rect width="1500" height="980" fill="#f5f7fb"/>
+  <text x="48" y="52" class="title">Vehicle Service &amp; Maintenance Management System</text>
+  <text x="48" y="78" class="subtitle">Entity–relationship diagram · primary keys (PK) and foreign keys (FK) reflect the relational schema</text>
+  <rect x="1195" y="36" width="255" height="42" rx="12" class="badge"/>
+  <text x="1212" y="62" class="badgeText">GEARDESK  •  DBMS PROJECT</text>
+
+  <!-- Relationship connectors, behind entities -->
+  <path class="line" d="M210 295 L210 390"/>
+  <text x="222" y="335" class="rel">1 : many</text>
+  <path class="line" d="M360 500 L500 500 L500 525 L600 525"/>
+  <text x="420" y="486" class="rel">1 : many</text>
+  <path class="line" d="M750 295 L750 390"/>
+  <text x="762" y="345" class="rel">1 : many</text>
+  <path class="line" d="M1100 208 L1000 208 L1000 435 L950 435"/>
+  <text x="1015" y="230" class="rel">1 : many</text>
+  <path class="line" d="M950 520 L1100 520"/>
+  <text x="982" y="506" class="rel">1 : 0..1</text>
+  <path class="line" d="M775 620 L775 705"/>
+  <text x="787" y="670" class="rel">1 : many</text>
+  <path class="line" d="M1100 790 L950 790"/>
+  <text x="1002" y="776" class="rel">1 : many</text>
+
+  <!-- CUSTOMER -->
+  <g transform="translate(60 110)">
+    <rect width="300" height="185" rx="13" class="entity"/>
+    <path d="M13 0 H287 Q300 0 300 13 V43 H0 V13 Q0 0 13 0Z" class="head"/>
+    <rect width="5" height="43" rx="2" class="headAccent"/>
+    <text x="18" y="28" class="headText">CUSTOMER</text>
+    <text x="18" y="70" class="key">PK</text><text x="58" y="70" class="row">Customer_ID</text>
+    <text x="18" y="96" class="row">Name</text><text x="18" y="120" class="row">Phone</text>
+    <text x="18" y="144" class="row">Email</text><text x="18" y="168" class="row">Address</text>
+  </g>
+
+  <!-- VEHICLE -->
+  <g transform="translate(60 390)">
+    <rect width="300" height="220" rx="13" class="entity"/>
+    <path d="M13 0 H287 Q300 0 300 13 V43 H0 V13 Q0 0 13 0Z" class="head"/>
+    <rect width="5" height="43" rx="2" class="headAccent"/>
+    <text x="18" y="28" class="headText">VEHICLE</text>
+    <text x="18" y="70" class="key">PK</text><text x="58" y="70" class="row">Vehicle_ID</text>
+    <text x="18" y="96" class="key">FK</text><text x="58" y="96" class="row">Customer_ID → CUSTOMER</text>
+    <text x="18" y="122" class="row">Registration_No (unique)</text>
+    <text x="18" y="148" class="row">Brand, Model</text>
+    <text x="18" y="174" class="row">Manufacturing_Year</text>
+    <text x="18" y="200" class="row">Vehicle_Type</text>
+  </g>
+
+  <!-- MECHANIC -->
+  <g transform="translate(600 110)">
+    <rect width="300" height="185" rx="13" class="entity"/>
+    <path d="M13 0 H287 Q300 0 300 13 V43 H0 V13 Q0 0 13 0Z" class="head"/>
+    <rect width="5" height="43" rx="2" class="headAccent"/>
+    <text x="18" y="28" class="headText">MECHANIC</text>
+    <text x="18" y="70" class="key">PK</text><text x="58" y="70" class="row">Mechanic_ID</text>
+    <text x="18" y="96" class="row">Name, Phone</text>
+    <text x="18" y="122" class="row">Specialization</text>
+    <text x="18" y="148" class="row">Experience</text>
+  </g>
+
+  <!-- SERVICE -->
+  <g transform="translate(1100 110)">
+    <rect width="340" height="185" rx="13" class="entity"/>
+    <path d="M13 0 H327 Q340 0 340 13 V43 H0 V13 Q0 0 13 0Z" class="head"/>
+    <rect width="5" height="43" rx="2" class="headAccent"/>
+    <text x="18" y="28" class="headText">SERVICE</text>
+    <text x="18" y="70" class="key">PK</text><text x="58" y="70" class="row">Service_ID</text>
+    <text x="18" y="96" class="row">Service_Name, Description</text>
+    <text x="18" y="122" class="row">Labour_Cost</text>
+    <text x="18" y="148" class="row">Estimated_Time</text>
+  </g>
+
+  <!-- SERVICE_RECORD -->
+  <g transform="translate(600 390)">
+    <rect width="350" height="230" rx="13" class="entity"/>
+    <path d="M13 0 H337 Q350 0 350 13 V43 H0 V13 Q0 0 13 0Z" class="head"/>
+    <rect width="5" height="43" rx="2" class="headAccent"/>
+    <text x="18" y="28" class="headText">SERVICE_RECORD</text>
+    <text x="18" y="70" class="key">PK</text><text x="58" y="70" class="row">Service_Record_ID</text>
+    <text x="18" y="96" class="key">FK</text><text x="58" y="96" class="row">Vehicle_ID → VEHICLE</text>
+    <text x="18" y="122" class="key">FK</text><text x="58" y="122" class="row">Mechanic_ID → MECHANIC</text>
+    <text x="18" y="148" class="key">FK</text><text x="58" y="148" class="row">Service_ID → SERVICE</text>
+    <text x="18" y="174" class="row">Service_Date, Problem_Description</text>
+    <text x="18" y="200" class="row">Service_Status, Remarks</text>
+  </g>
+
+  <!-- INVOICE -->
+  <g transform="translate(1100 420)">
+    <rect width="340" height="220" rx="13" class="entity"/>
+    <path d="M13 0 H327 Q340 0 340 13 V43 H0 V13 Q0 0 13 0Z" class="head"/>
+    <rect width="5" height="43" rx="2" class="headAccent"/>
+    <text x="18" y="28" class="headText">INVOICE</text>
+    <text x="18" y="70" class="key">PK</text><text x="58" y="70" class="row">Invoice_ID</text>
+    <text x="18" y="96" class="key">FK</text><text x="58" y="96" class="row">Service_Record_ID (unique)</text>
+    <text x="18" y="122" class="row">Invoice_Date</text>
+    <text x="18" y="148" class="row">Labour_Amount, Parts_Amount</text>
+    <text x="18" y="174" class="row">Tax, Total_Amount</text>
+    <text x="18" y="200" class="row">Payment_Status</text>
+  </g>
+
+  <!-- SERVICE_PART -->
+  <g transform="translate(600 705)">
+    <rect width="350" height="180" rx="13" class="entity"/>
+    <path d="M13 0 H337 Q350 0 350 13 V43 H0 V13 Q0 0 13 0Z" class="head"/>
+    <rect width="5" height="43" rx="2" class="headAccent"/>
+    <text x="18" y="28" class="headText">SERVICE_PART</text>
+    <text x="18" y="70" class="key">PK</text><text x="58" y="70" class="row">Service_Part_ID</text>
+    <text x="18" y="96" class="key">FK</text><text x="58" y="96" class="row">Service_Record_ID → SERVICE_RECORD</text>
+    <text x="18" y="122" class="key">FK</text><text x="58" y="122" class="row">Part_ID → SPARE_PART</text>
+    <text x="18" y="148" class="row">Quantity_Used, Cost</text>
+  </g>
+
+  <!-- SPARE_PART -->
+  <g transform="translate(1100 705)">
+    <rect width="340" height="180" rx="13" class="entity"/>
+    <path d="M13 0 H327 Q340 0 340 13 V43 H0 V13 Q0 0 13 0Z" class="head"/>
+    <rect width="5" height="43" rx="2" class="headAccent"/>
+    <text x="18" y="28" class="headText">SPARE_PART</text>
+    <text x="18" y="70" class="key">PK</text><text x="58" y="70" class="row">Part_ID</text>
+    <text x="18" y="96" class="row">Part_Name, Category</text>
+    <text x="18" y="122" class="row">Unit_Price, Quantity_Available</text>
+    <text x="18" y="148" class="row">Reorder_Level</text>
+  </g>
+
+  <line x1="50" y1="930" x2="1450" y2="930" stroke="#dfe5ee"/>
+  <text x="52" y="954" class="legend">Cardinality: 1 : many indicates one parent can have multiple child records. A service record has zero or one invoice; a part usage record bridges service records and spare parts.</text>
+</svg>

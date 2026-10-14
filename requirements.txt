@@ -1,0 +1,2 @@
+# Optional: needed only when DB_BACKEND=mysql. SQLite + Tkinter need no pip packages.
+mysql-connector-python>=8.3,<10
