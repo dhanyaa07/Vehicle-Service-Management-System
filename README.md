@@ -173,3 +173,7 @@ Review database.py for database connection and initialization logic.
 ## Entry Point
 
 main.py provides the project entry point.
+
+## Windows Launch
+
+run.bat provides a Windows launch script.
