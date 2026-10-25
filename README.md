@@ -193,3 +193,7 @@ Review schema_sqlite.sql for the SQLite schema.
 ## MySQL Schema
 
 Review schema_mysql.sql for the MySQL schema.
+
+## Running Tests
+
+Run pytest to execute the project's tests if pytest is installed.
