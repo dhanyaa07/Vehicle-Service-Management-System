@@ -141,3 +141,7 @@ Vehicle Service Management System for managing vehicle service operations.
 ## Environment Setup
 
 Configure local environment variables using .env.example.
+
+## Install Dependencies
+
+Install dependencies using pip install -r requirements.txt.
