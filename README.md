@@ -153,3 +153,7 @@ Use the documented project entry point to start the application.
 ## Database Support
 
 The project includes SQLite and MySQL schema files.
+
+## Database Design
+
+Refer to ER_DIAGRAM.md and ER_DIAGRAM.svg for the database design.
