@@ -137,3 +137,7 @@ tests/test_database.py  SQLite workflow and trigger tests
 ## Project Overview
 
 Vehicle Service Management System for managing vehicle service operations.
+
+## Environment Setup
+
+Configure local environment variables using .env.example.
