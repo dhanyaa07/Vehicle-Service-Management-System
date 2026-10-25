@@ -161,3 +161,7 @@ Refer to ER_DIAGRAM.md and ER_DIAGRAM.svg for the database design.
 ## Database Seeding
 
 Review seed.py before initializing sample data.
+
+## Data Access Layer
+
+repository.py contains the project's data access implementation.
