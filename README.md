@@ -133,3 +133,7 @@ ER_DIAGRAM.md           Relationship and ER-to-relational mapping
 scripts/create_database.sql  One-time MySQL database creation
 tests/test_database.py  SQLite workflow and trigger tests
 ```
+
+## Project Overview
+
+Vehicle Service Management System for managing vehicle service operations.
