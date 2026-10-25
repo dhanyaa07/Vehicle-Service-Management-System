@@ -165,3 +165,7 @@ Review seed.py before initializing sample data.
 ## Data Access Layer
 
 repository.py contains the project's data access implementation.
+
+## Database Utilities
+
+Review database.py for database connection and initialization logic.
