@@ -201,3 +201,7 @@ Run pytest to execute the project's tests if pytest is installed.
 ## Configuration Template
 
 .env.example lists the expected configuration keys.
+
+## Application Module
+
+app.py contains the main application implementation.
