@@ -189,3 +189,7 @@ Additional database creation SQL is available under scripts.
 ## SQLite Schema
 
 Review schema_sqlite.sql for the SQLite schema.
+
+## MySQL Schema
+
+Review schema_mysql.sql for the MySQL schema.
