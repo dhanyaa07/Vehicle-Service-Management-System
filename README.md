@@ -181,3 +181,7 @@ run.bat provides a Windows launch script.
 ## Testing
 
 The tests directory contains database tests.
+
+## SQL Utilities
+
+Additional database creation SQL is available under scripts.
