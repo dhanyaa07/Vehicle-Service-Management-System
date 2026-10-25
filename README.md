@@ -205,3 +205,7 @@ Run pytest to execute the project's tests if pytest is installed.
 ## Application Module
 
 app.py contains the main application implementation.
+
+## Repository Hygiene
+
+Keep secrets, virtual environments, and generated cache files out of version control.
