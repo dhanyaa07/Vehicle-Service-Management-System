@@ -185,3 +185,7 @@ The tests directory contains database tests.
 ## SQL Utilities
 
 Additional database creation SQL is available under scripts.
+
+## SQLite Schema
+
+Review schema_sqlite.sql for the SQLite schema.
