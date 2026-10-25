@@ -209,3 +209,7 @@ app.py contains the main application implementation.
 ## Repository Hygiene
 
 Keep secrets, virtual environments, and generated cache files out of version control.
+
+## Maintenance
+
+Keep setup instructions and dependencies synchronized with project changes.
