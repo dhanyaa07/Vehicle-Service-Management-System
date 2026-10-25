@@ -149,3 +149,7 @@ Install dependencies using pip install -r requirements.txt.
 ## Running the Application
 
 Use the documented project entry point to start the application.
+
+## Database Support
+
+The project includes SQLite and MySQL schema files.
