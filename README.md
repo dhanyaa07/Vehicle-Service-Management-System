@@ -145,3 +145,7 @@ Configure local environment variables using .env.example.
 ## Install Dependencies
 
 Install dependencies using pip install -r requirements.txt.
+
+## Running the Application
+
+Use the documented project entry point to start the application.
