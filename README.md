@@ -213,3 +213,7 @@ Keep secrets, virtual environments, and generated cache files out of version con
 ## Maintenance
 
 Keep setup instructions and dependencies synchronized with project changes.
+
+## Development Workflow
+
+Test changes before committing and pushing them.
