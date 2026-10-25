@@ -177,3 +177,7 @@ main.py provides the project entry point.
 ## Windows Launch
 
 run.bat provides a Windows launch script.
+
+## Testing
+
+The tests directory contains database tests.
